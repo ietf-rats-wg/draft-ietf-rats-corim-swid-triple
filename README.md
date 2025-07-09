@@ -1,13 +1,14 @@
-# Internet-Draft Template Repository
+# CoMID-CoSWID linking triple
 
-Use this repository as a template if you want to start working on
-[IETF](https://www.ietf.org/) documents. [Click here to create a new repository using the
-template](https://github.com/martinthomson/internet-draft-template/generate).
-Make sure to check "Include all branches", or you will need to enable GitHub Pages manually.
+* [Editor's Copy](https://ietf-rats-wg.github.io/draft-ietf-rats-corim-swid-triple/#go.draft-ietf-rats-corim-swid-triple.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-rats-corim-swid-triple)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-rats-corim-swid-triple)
+* [Compare Editor's Copy to Working Group Draft](https://ietf-rats-wg.github.io/draft-ietf-rats-corim-swid-triple/#go.draft-ietf-rats-corim-swid-triple.diff)
 
-[Read the
-instructions](https://github.com/martinthomson/i-d-template/blob/main/doc/TEMPLATE.md)
-for more information.
+## Contributing
 
-Once you have created your own repository, start work by
-[renaming the `draft-todo-yourname-protocol.md` file](../../edit/main/draft-todo-yourname-protocol.md).
+See the
+[guidelines for contributions](https://github.com/ietf-rats-wg/draft-ietf-rats-corim-swid-triple/blob/main/CONTRIBUTING.md).
+
+Contributions can be made by creating pull requests.
+The GitHub interface supports creating pull requests using the Edit (✏) button.

@@ -1,0 +1,8 @@
+ir-coswid-stage = { * concise-swid-tag-id => ir-coswid }
+
+ir-concise-swid-tag = concise-swid-tag / ir-concise-swid-evidence
+
+ir-concise-swid-evidence = {
+    ? &(tag-id: 0) => concise-swid-tag-id
+    &(evidence: 3) => evidence-entry
+}

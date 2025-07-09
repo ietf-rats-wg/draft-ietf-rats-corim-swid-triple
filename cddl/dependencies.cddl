@@ -1,0 +1,64 @@
+oid-type = bytes
+tagged-oid-type = #6.111(oid-type)
+uuid-type = bytes .size 16
+tagged-uuid-type = #6.37(uuid-type)
+tagged-bytes = #6.560(bytes)
+
+$class-id-type-choice /= tagged-oid-type
+$class-id-type-choice /= tagged-uuid-type
+$class-id-type-choice /= tagged-bytes
+
+cose-label = int / tstr
+cose-value = any
+
+COSE_Key = {
+    1 => tstr / int
+    ? 2 => bstr 
+    ? 3 => tstr / int 
+    ? 4 => [+ (tstr / int) ]
+    ? 5 => bstr
+    * cose-label => cose-value
+}
+
+digest = [
+  alg: (int / text),
+  val: bytes
+]
+
+digests-type = [ + digest ]
+
+tagged-pkix-base64-key-type = #6.554(tstr)
+tagged-pkix-base64-cert-type = #6.555(tstr)
+tagged-key-thumbprint-type = #6.557(digest)
+tagged-cose-key-type = #6.558(COSE_Key)
+tagged-cert-thumbprint-type = #6.559(digest)
+tagged-pkix-asn1der-cert-type = #6.562(bstr)
+
+$instance-id-type-choice /= tagged-ueid-type
+$instance-id-type-choice /= tagged-uuid-type
+$instance-id-type-choice /= tagged-bytes
+$instance-id-type-choice /= tagged-pkix-base64-key-type
+$instance-id-type-choice /= tagged-pkix-base64-cert-type
+$instance-id-type-choice /= tagged-cose-key-type
+$instance-id-type-choice /= tagged-key-thumbprint-type
+$instance-id-type-choice /= tagged-cert-thumbprint-type
+$instance-id-type-choice /= tagged-pkix-asn1der-cert-type
+
+$group-id-type-choice /= tagged-uuid-type
+$group-id-type-choice /= tagged-bytes
+
+non-empty<M> = (M) .and ({ + any => any })
+
+class-map = non-empty<{
+  ? &(class-id: 0) => $class-id-type-choice
+  ? &(vendor: 1) => tstr
+  ? &(model: 2) => tstr
+  ? &(layer: 3) => uint
+  ? &(index: 4) => uint
+}>
+
+environment-map = non-empty<{
+  ? &(class: 0) => class-map
+  ? &(instance: 1) => $instance-id-type-choice
+  ? &(group: 2) => $group-id-type-choice
+}>
