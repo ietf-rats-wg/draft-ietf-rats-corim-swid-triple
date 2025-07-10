@@ -1,0 +1,126 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2025-07-10T00:54:37.138124+00:00",
+  "repo": "ietf-rats-wg/draft-ietf-rats-corim-swid-triple",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOPJthjs6_uqpc",
+      "title": "How to interpret authorized-by in evidence?",
+      "url": "https://github.com/ietf-rats-wg/draft-ietf-rats-corim-swid-triple/issues/1",
+      "state": "OPEN",
+      "author": "deeglaze",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [
+        "nedmsmith"
+      ],
+      "labels": [],
+      "body": "From the TCG SPDM DICE evidence binding specification\n\n> The authorized-by item SHOULD be included in Evidence if Reference Values are supplied by an entity other than\nthe supplier of the Attester.\n\nI'm not entirely sure why the Attester should be including in evidence who is expected to authorize the software it has just measured.\nI this meant more as a hint rather than some strange inversion of policy?",
+      "createdAt": "2025-07-09T17:41:19Z",
+      "updatedAt": "2025-07-09T17:41:33Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 2,
+      "id": "I_kwDOPJthjs6_woIN",
+      "title": "Is CoMID-CoSWID a complete or partial inventory?",
+      "url": "https://github.com/ietf-rats-wg/draft-ietf-rats-corim-swid-triple/issues/2",
+      "state": "OPEN",
+      "author": "deeglaze",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [
+        "nedmsmith"
+      ],
+      "labels": [],
+      "body": "It's important to know if additional evidence for software that has no reference information should disqualify the evidence for a given linking triple.\n\nExtra files should not matter only if the triple is for a partial inventory.",
+      "createdAt": "2025-07-09T21:25:21Z",
+      "updatedAt": "2025-07-09T21:35:49Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "deeglaze",
+          "authorAssociation": "COLLABORATOR",
+          "body": "If we need an requirelist/denylist intepretation for partial inventories, we should just create another triple for that purpose. I'd like to keep the interpretation unambiguous.",
+          "createdAt": "2025-07-09T21:35:49Z",
+          "updatedAt": "2025-07-09T21:35:49Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 3,
+      "id": "PR_kwDOPJthjs6eMjtZ",
+      "title": "Initial draft",
+      "url": "https://github.com/ietf-rats-wg/draft-ietf-rats-corim-swid-triple/pull/3",
+      "state": "OPEN",
+      "author": "deeglaze",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-07-09T22:01:58Z",
+      "updatedAt": "2025-07-09T22:01:58Z",
+      "baseRepository": "ietf-rats-wg/draft-ietf-rats-corim-swid-triple",
+      "baseRefName": "main",
+      "baseRefOid": "72ebad61a366549af2b49a04c784e21be1eef885",
+      "headRepository": "deeglaze/draft-ietf-rats-corim-swid-triple",
+      "headRefName": "init",
+      "headRefOid": "1bdd3d868d555bd935d7b8ff24720ead3a428b8e",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
